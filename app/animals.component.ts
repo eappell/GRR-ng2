@@ -3,6 +3,6 @@ import { http } from '@angular/http';
 
 @Component({
     selector: 'animals',
-    template: '<h3>Collection</h3>'
+    templateUrl : `animals.component.html`
 })
 export class AnimalsComponent { }
