@@ -5,4 +5,9 @@ import { http } from '@angular/http';
     selector: 'animals',
     templateUrl : `animals.component.html`
 })
-export class AnimalsComponent { }
+export class AnimalsComponent {
+  title = "Animals",
+  collection = function(http){
+    return http.get('data/animals.json');
+  }
+}
