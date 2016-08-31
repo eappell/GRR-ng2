@@ -8,6 +8,6 @@ import { http } from '@angular/http';
 export class AnimalsComponent {
   title = "Animals",
   collection = function(http){
-    return http.get('data/animals.json');
+    return http.get('./data/animals.json');
   }
 }
